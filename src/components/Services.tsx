@@ -2,11 +2,11 @@
 const Services = () => {
   const services = [
     {
-      title: 'Criação de Carteira Digital',
-      description: 'Sistemas de pagamento altamente protegidos, transações instantâneas, armazenamento de saldo em tempo real e integração simplificada com gateways financeiros globais.',
+      title: 'Criação de SDK de Integração e Aplicações de Terminal',
+      description: 'Kit de desenvolvimento (SDK) robusto e de alta performance para abstrair a complexidade de comunicação com terminais de hardware e sistemas industriais.',
       icon: (
         <svg className="w-8 h-8 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
         </svg>
       ),
     },
