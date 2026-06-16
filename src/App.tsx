@@ -1,4 +1,3 @@
-import Navbar from './components/NavBar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
@@ -6,6 +5,7 @@ import Solutions from './components/Solutions';
 import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
   return (

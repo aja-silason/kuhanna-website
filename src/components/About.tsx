@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   const stats = [
     { label: 'Missão', title: 'Impulsionar negócios através de software confiável e inovação de ponta.' },
