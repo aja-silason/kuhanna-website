@@ -1,11 +1,11 @@
-import Navbar from './components/NavBar.tsx';
-import Hero from './components/Hero.tsx';
-import Services from './components/Services.tsx';
-import About from './components/About.tsx';
-import Solutions from './components/Solutions.tsx';
-import Process from './components/Process.tsx';
-import Contact from './components/Contact.tsx';
-import Footer from './components/Footer.tsx';
+import Navbar from './components/NavBar';
+import Hero from './components/Hero';
+import Services from './components/Services';
+import About from './components/About';
+import Solutions from './components/Solutions';
+import Process from './components/Process';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
