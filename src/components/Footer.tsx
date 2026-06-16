@@ -6,9 +6,9 @@ const Footer = () => {
           
           <div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-              KUHANNA<span className="text-blue-500"></span>LABS
+              KUHANNA<span className="text-blue-500"></span>
             </span>
-            <p className="text-xs text-slate-500 mt-1">Sistemas robustos de ponta a ponta.</p>
+            <p className="text-xs text-slate-500 mt-1">Na vanguarda do desenvolvimento de sistemas robustos.</p>
           </div>
 
           {/* Social Icons Placeholder */}
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           <div className="text-xs text-slate-600">
-            &copy; {new Date().getFullYear()} KUHANNA LABS. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} KUHANNA. Todos os direitos reservados.
           </div>
           
         </div>

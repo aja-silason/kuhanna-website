@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 via-indigo-400 to-cyan-400 bg-clip-text text-transparent tracking-wider">
-              KUHANNA<span className="text-blue-500"></span> LABS
+              KUHANNA<span className="text-blue-500"></span>
             </span>
           </div>
           
