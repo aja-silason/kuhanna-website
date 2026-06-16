@@ -11,7 +11,7 @@ export const useSendEmail = () => {
     const [data, setDatas] = useState<props>({name: "", email: "", message: ""});
     const [status, setStatus] = useState<string>("");
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         setDatas((prevState) => (
             {...prevState, [e.target.name]: e.target.value}
         ))
