@@ -1,10 +1,14 @@
+import { useSendEmail } from "../hoot/useSendEmail";
+
 const Contact = () => {
+
+  const {handleChange, handleSubmit, status, data} = useSendEmail();
+
   return (
     <section id="contato" className="py-24 bg-slate-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* Info Side */}
           <div>
             <h2 className="text-sm font-semibold tracking-wider text-blue-500 uppercase mb-3">Contato</h2>
             <h3 className="text-3xl sm:text-4xl font-bold text-white mb-6 tracking-tight">
@@ -30,22 +34,22 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Form Side */}
           <div className="bg-slate-900/40 p-8 rounded-2xl border border-slate-800 backdrop-blur-sm">
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Nome Completo</label>
-                <input type="text" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Ex: João Silva" required />
+                <input type="text" value={data.name} name="name" onChange={handleChange} className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Ex: João Silva" required />
               </div>
               <div>
                 <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">E-mail Corporativo</label>
-                <input type="email" className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Ex: joao@empresa.com" required />
+                <input type="email" value={data.email} name="email" onChange={handleChange} className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 transition-colors" placeholder="Ex: joao@empresa.com" required />
               </div>
               <div>
                 <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Mensagem / Escopo Breve</label>
-                <textarea rows={4} className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="Fale um pouco sobre a solução que deseja desenvolver..." required></textarea>
+                <textarea rows={4} value={data.message} name="message" onChange={handleChange} className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-blue-500 transition-colors resize-none" placeholder="Fale um pouco sobre a solução que deseja desenvolver..." required></textarea>
               </div>
-              <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium py-3.5 rounded-lg transition-colors shadow-lg shadow-blue-500/10">
+              {status && <p className="text-sm font-medium text-slate-300">{status}</p>}
+              <button type="submit" className="w-full bg-gradient-to-r cursor-pointer from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium py-3.5 rounded-lg transition-colors shadow-lg shadow-blue-500/10">
                 Enviar Solicitação
               </button>
             </form>
